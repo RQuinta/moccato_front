@@ -1,27 +1,30 @@
-# Quinta
+O projeto consiste em uma API Rails 5 e um front em Angular2
+
+Desafio proposto
+
+Este projeto consiste em construir uma aplicação web, utilizando Ruby 2.2+ Rails 4.2+, e o banco de dados PostgreSQL 9+. > Não é importante a parte gráfica do projeto, sugiro utilizar o Bootstrap para ficar fácil e minimamente apresentável.
+
+Você poderá usar extensões ao seu gosto, desde que eles não componham uma solução completa, ou seja, você deve construir e > não somente parametrizar algo pronto.
+
+Não esqueça de documentar o que for necessário da aplicação no arquivo README.md informando todos os dados necessários para > rodar o projeto. Versione também o dump da última versão do seu banco de dados se necessário. É recomendável a utilização do setup de banco via rake setup/migrate para facilitar a execução e avaliação.
+
+CASE:
+
+Um cliente fictício passou as 'stories' com os detalhes do que ele precisa:
+
+Como visitante eu devo conseguir criar uma conta utilizando meu nome, email e uma senha, e ao concluir com sucesso meu cadastro devo receber um email de confirmação. Como visitante eu devo conseguir me autenticar utilizando meu email e senha. Como usuário devo poder alterar meu cadastro e me deslogar. Como usuário administrador devo poder visualizar todos os usuários. Como usuário administrador devo poder buscar um usuário pelo seu nome. Como usuário administrador devo poder alterar os dados de qualquer usuário. Como usuário administrador devo poder remover um usuário. Como usuário administrador devo poder listar todos os usuários deletados.
+
+Instalação Front
+  curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+  nvm install node
+  Caso não funcione executar o seguinte comando e repetir a linha anterior: source ~/.bashrc 
+Comandos:
+
+Executar Front:
+  npm install
+  ng serve
+  Abrir o endereço `http://localhost:4200/`
+
+Link para aplicação no Heoku:  Ainda não disponivel
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-beta.31.
-
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
