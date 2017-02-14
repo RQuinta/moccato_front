@@ -1,0 +1,29 @@
+<headernav></headernav>
+
+<div class="container">
+
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" (click)="getUsers()" />
+            Listar apenas os usuários deletados
+        </label>
+    </div>
+
+    <section class="table-responsive">
+        <h4>Lista de Usuários</h4>
+        <table class="table table-hover table-striped table-bordered">
+            <thead>
+                <tr>
+                    <td>Nome</td>
+                    <td>Email</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of users" (click)="selectedUser(user)">
+                    <td>{{ user.name }}</td>
+                    <td>{{ user.email }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</div>
